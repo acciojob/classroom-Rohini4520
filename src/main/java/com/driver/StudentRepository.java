@@ -36,7 +36,7 @@ public class StudentRepository {
 
             // Update teacher's number of students
             Teacher teacherObj = teacherMap.get(teacher);
-            teacherObj.setNumberOfStudents(teacherObj.getNumberOfStudents() + 1);
+            teacherObj.setYearsOfExperience(teacherObj.getYearsOfExperience() + 1);
         }
     }
 

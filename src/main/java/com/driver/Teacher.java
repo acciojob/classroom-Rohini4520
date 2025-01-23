@@ -1,31 +1,28 @@
 package com.driver;
 
 public class Teacher {
-
     private String name;
-
-    private int numberOfStudents;
-
     private int age;
+    private int yearsOfExperience;
 
+    // No-argument constructor
     public Teacher() {
-
     }
-    // Getters and Setters
+
+    // Parameterized constructor
+    public Teacher(String name, int age, int yearsOfExperience) {
+        this.name = name;
+        this.age = age;
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
+    // Getters and setters
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getNumberOfStudents() {
-        return numberOfStudents;
-    }
-
-    public void setNumberOfStudents(int numberOfStudents) {
-        this.numberOfStudents = numberOfStudents;
     }
 
     public int getAge() {
@@ -36,4 +33,11 @@ public class Teacher {
         this.age = age;
     }
 
+    public int getYearsOfExperience() {
+        return yearsOfExperience;
+    }
+
+    public void setYearsOfExperience(int yearsOfExperience) {
+        this.yearsOfExperience = yearsOfExperience;
+    }
 }
