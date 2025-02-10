@@ -4,6 +4,8 @@ public class Teacher {
     private String name;
     private int age;
     private int yearsOfExperience;
+    private int numberOfStudents;
+
 
     // No-argument constructor
     public Teacher() {
@@ -14,6 +16,7 @@ public class Teacher {
         this.name = name;
         this.age = age;
         this.yearsOfExperience = yearsOfExperience;
+        this.numberOfStudents =0;
     }
 
     // Getters and setters
@@ -39,5 +42,14 @@ public class Teacher {
 
     public void setYearsOfExperience(int yearsOfExperience) {
         this.yearsOfExperience = yearsOfExperience;
+    }
+
+        public int getNumberOfStudents() {
+            return numberOfStudents;
+        }
+
+        // Method to update the number of students (if required)
+        public void setNumberOfStudents(int numberOfStudents) {
+            this.numberOfStudents = numberOfStudents;
     }
 }
